@@ -53,6 +53,7 @@ const Welcome = () => {
                 setActiveJobTypes(item);
                 router.push(`/search/${item}`);
               }}
+              style={styles.tab(activeJobTypes, item)}
             >
               <Text style={styles.tab(activeJobTypes, item)}>{item}</Text>
             </TouchableOpacity>;
